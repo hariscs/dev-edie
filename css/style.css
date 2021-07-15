@@ -167,6 +167,7 @@ a {
 .search-input {
 	font-family: inherit;
 	border: 0;
+	max-width: 250px;
 	padding: 0.5em;
 	background: var(--clr-gray6);
 	color: var(--clr-gray3);
@@ -387,6 +388,10 @@ a {
 	padding: 2em;
 }
 
+.footer-links {
+	margin: 1.5em 0;
+}
+
 .footer-list .list-item {
 	font-weight: 400;
 	font-size: 18px;
@@ -419,6 +424,11 @@ a {
 
 .footer-text {
 	text-align: center;
+	margin-top: 9em;
+}
+
+.footer-text p {
+	margin-bottom: 0;
 }
 
 .footer-text a {
@@ -427,5 +437,10 @@ a {
 
 .footer-text a:hover,
 a:focus {
+	text-decoration: underline;
+}
+
+.list-item:hover,
+.list-item:focus {
 	text-decoration: underline;
 }
