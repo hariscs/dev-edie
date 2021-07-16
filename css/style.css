@@ -341,6 +341,7 @@ a {
 .img-2 {
 	grid-area: img2;
 }
+
 .img-3 {
 	grid-area: img3;
 }
@@ -443,4 +444,186 @@ a:focus {
 .list-item:hover,
 .list-item:focus {
 	text-decoration: underline;
+}
+
+/* media query for larger screens */
+
+@media (min-width: 700px) {
+	.container {
+		max-width: 1440px;
+	}
+
+	.mobile-menu {
+		display: none;
+	}
+	.navbar {
+		padding: 1.5em 0;
+		font-weight: 500;
+	}
+	.navbar-list {
+		display: flex;
+	}
+
+	.list-item {
+		font-size: 24px;
+	}
+
+	.list-item + .list-item {
+		margin-left: 2em;
+	}
+
+	/* hero section */
+	.search-input {
+		width: 300px;
+	}
+
+	.main {
+		margin-top: 4em;
+	}
+	.intro {
+		padding-left: 13em;
+	}
+
+	.upper-text {
+		font-size: 18px;
+	}
+
+	.intro-title {
+		font-size: 48px;
+		max-width: 18ch;
+	}
+
+	.intro-subtitle {
+		font-size: 18px;
+		max-width: 33ch;
+	}
+
+	.form-text {
+		font-size: 14px;
+	}
+
+	/* services area */
+	.services-text {
+		font-size: 36px;
+	}
+
+	.services-cards {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	/* work section */
+
+	.work-title {
+		font-size: 36px;
+		max-width: 25ch;
+	}
+
+	.grid-cols {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1em;
+		max-width: 85%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.col-img {
+		margin: 0;
+	}
+
+	.img-description {
+		font-size: 14px;
+	}
+
+	.img-title {
+		font-size: 24px;
+	}
+
+	.col-1,
+	.col-3 {
+		margin-top: 3em;
+	}
+
+	.col-2,
+	.col-4 {
+		margin-top: -3em;
+	}
+
+	.col-link {
+		justify-content: flex-end;
+		margin-top: 0;
+		margin-right: 5em;
+	}
+
+	/* team section */
+	.team {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding-left: 3em;
+		padding-right: 3em;
+		margin: 8em auto;
+	}
+
+	.team > * {
+		width: 100%;
+	}
+
+	.team-upper-text {
+		font-size: 18px;
+	}
+
+	.team-title {
+		font-size: 36px;
+		line-height: 1.5;
+	}
+
+	.team-text {
+		font-size: 16px;
+	}
+
+	/* clients section */
+	.client {
+		padding-left: 3em;
+		padding-right: 3em;
+	}
+	.client-text {
+		font-size: 36px;
+		max-width: 40ch;
+		line-height: 1.5;
+	}
+
+	.name {
+		font-size: 24px;
+	}
+
+	.info {
+		font-size: 18px;
+	}
+
+	/* footer */
+	.footer-flex {
+		padding-left: 3em;
+		padding-right: 3em;
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+
+	.footer-links {
+		margin-top: -1.5em;
+	}
+
+	.footer-flex .form {
+		margin-top: -1em;
+	}
+
+	.footer-list .list-item + .list-item {
+		margin-left: 0;
+	}
+
+	.footer-text {
+		margin-top: 6em;
+	}
 }
