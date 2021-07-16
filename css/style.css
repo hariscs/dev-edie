@@ -111,7 +111,25 @@ a {
 }
 
 .navbar-list {
+	position: fixed;
+	right: 0;
+	left: 0;
+	top: 4em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background: var(--clr-white);
+	padding: 2em;
+	height: 100vh;
+}
+
+.active {
 	display: none;
+}
+
+.list-item + .list-item {
+	margin-top: 1.5em;
 }
 
 /* showcase area */
@@ -460,8 +478,16 @@ a:focus {
 		padding: 1.5em 0;
 		font-weight: 500;
 	}
+
 	.navbar-list {
+		position: initial;
 		display: flex;
+		flex-direction: row;
+		align-items: center;
+		width: initial;
+		height: initial;
+		background: 0;
+		padding: 0;
 	}
 
 	.list-item {
@@ -470,7 +496,9 @@ a:focus {
 
 	.list-item + .list-item {
 		margin-left: 2em;
+		margin-top: initial;
 	}
+	.s
 
 	/* hero section */
 	.search-input {
